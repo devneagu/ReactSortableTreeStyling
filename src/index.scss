@@ -140,7 +140,7 @@ body {
     .rst__row {
       .rst__moveHandle { 
         &::after {
-          content: '\2807';
+          content: none;
           color:black;
           top:70%;
         }
@@ -153,5 +153,14 @@ body {
         }
       }
     }
+  }
+}
+
+.tripleDots {
+  &::before { 
+    left: -1em;
+    content: '\2807';
+    color:black;
+    position:absolute;
   }
 }
