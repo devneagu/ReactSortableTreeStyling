@@ -33,7 +33,7 @@ function App() {
           treeData={treeData}
           onChange={(treeData) => setTreeData(treeData)}
           generateNodeProps={({ node, path }) => {
-            console.log(arguments);
+            console.log(node, path);
             ref.current = ref.current + 1;
             console.log(ref);
             return {
